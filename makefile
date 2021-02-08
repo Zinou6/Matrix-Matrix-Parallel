@@ -1,7 +1,7 @@
 all:	app-hw1
 
 app-hw1:	main.o initMatrix.o displayMatrix.o ThreadCalcul.o calcul.o
-	gcc main.o initMatrix.o displayMatrix.o ThreadCalcul.o calcul.o -o mmm -lpthread
+	gcc main.o initMatrix.o displayMatrix.o ThreadCalcul.o calcul.o -o mmm -lm -lpthread
 
 main.o:	main.c
 	gcc -c main.c -o main.o 
